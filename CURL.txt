@@ -1,0 +1,8 @@
+curl --header "Content-Type: application/json"   --request GET   http://localhost:8080/Cityregion/Саратовская%20область
+curl --header "Content-Type: application/json"   --request GET   http://localhost:8080/Citydistrict/Уральский
+curl --header "Content-Type: application/json"   --request GET   http://localhost:8080/Population/1143546:11435460
+curl --header "Content-Type: application/json"   --request GET   http://localhost:8080/Poundation/1100:1600
+curl --header "Content-Type: application/json"   --request GET   http://localhost:8080/5555
+curl --header "Content-Type: application/json"   --request POST --data '{"id":5555,"name":"name","region":"region","district":"district","population":2443,"poundation":746}'  http://localhost:8080/Create
+curl --header "Content-Type: application/json"   --request DELETE   http://localhost:8080/5555
+curl --header "Content-Type: application/json"   --request PUT --data '{"newnumber":55}' http://localhost:8080/5555
